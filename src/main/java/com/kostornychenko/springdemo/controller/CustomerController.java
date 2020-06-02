@@ -112,6 +112,7 @@ public class CustomerController {
 	
 	@InitBinder
 	public void InitBinder(WebDataBinder dataBinder) {
+		
 	    StringTrimmerEditor stringTrimmerEditor = new StringTrimmerEditor(true);
 	    dataBinder.registerCustomEditor(String.class, stringTrimmerEditor);
 	    
